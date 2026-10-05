@@ -5,7 +5,6 @@
 
 :root {
   --bg: #FAF7F2;
-  --bg-hero: #F4EFEB;
   --bg-band: #F0EBE6;
 
   --ink: #2D231D;
@@ -212,14 +211,17 @@ section[id] { scroll-margin-top: 96px; }
 
 /* Hero ------------------------------------------------------------------- */
 
-.hero { background: var(--bg-hero); }
+.hero {
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: clamp(280px, 38vw, 520px);
+}
 
 .hero-inner {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: center;
-  padding-block: clamp(3rem, 6vw, 5.5rem);
+  position: relative;
+  z-index: 1;
+  padding-block: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .hero-copy {
@@ -229,8 +231,11 @@ section[id] { scroll-margin-top: 96px; }
 }
 
 .hero-media {
-  min-height: clamp(280px, 38vw, 520px);
-  background: linear-gradient(140deg, #EFE6DC 0%, #E3D5C6 45%, #D8C3AE 100%);
+  position: absolute;
+  inset: 0;
+  max-width: var(--wrap);   /* column width, same 1200px cap as .wrap */
+  margin-inline: auto;      /* centered, same mechanics as .wrap */
+  background: #B38766;      /* plain brown, replaces background.jpg */
 }
 
 /* About ------------------------------------------------------------------ */
@@ -504,11 +509,9 @@ section[id] { scroll-margin-top: 96px; }
   .primary-nav { display: block; }
 }
 
-/* Breakpoints: hero + contact, services -------------------------------- */
+/* Breakpoints: contact, services --------------------------------------- */
 
 @media (max-width: 899px) {
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-media { min-height: 260px; }
   .contact-grid { grid-template-columns: 1fr; }
 }
 
