@@ -63,7 +63,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 h1 { font-size: clamp(2.2rem, 1.1rem + 3.6vw, 3.5rem); line-height: 1.14; }
 
-.section { padding-block: 0; }
+.section { padding-block: 0; margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
 
 .lead { font-size: clamp(1rem, .95rem + .35vw, 1.15rem); }
 
@@ -308,6 +308,12 @@ section[id] { scroll-margin-top: 96px; }
 /* Quote band ------------------------------------------------------------- */
 
 .quote-band {
+  padding-block: 0;
+}
+
+/* band background spans exactly the .wrap column — same width as the
+   hero picture, not the whole page */
+.quote-band .wrap {
   background: var(--bg-band);
   padding-block: clamp(3rem, 6vw, 5rem);
 }
