@@ -243,7 +243,7 @@ section[id] { scroll-margin-top: 96px; }
   max-width: var(--wrap);   /* column width, same 1200px cap as .wrap */
   margin-inline: auto;      /* centered, same mechanics as .wrap */
   background:
-    linear-gradient(rgba(245, 241, 235, .35), rgba(245, 241, 235, .35)),
+    linear-gradient(rgba(245, 241, 235, .7), rgba(245, 241, 235, .7)),
     url("background.jpg") center / cover no-repeat;
 }
 
