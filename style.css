@@ -1,20 +1,20 @@
 /* ==========================================================================
    Mgr. Denisa Hanáková — advokátka
-   Warm cream / bronze palette (mood-a), Playfair Display + Montserrat (mood-b)
+   Dark blue / cognac / taupe / dusty rose / cream palette, EB Garamond
    ========================================================================== */
 
 :root {
-  --bg: #FAF7F2;
-  --bg-band: #F0EBE6;
+  --bg: #F5F1EB;
+  --bg-band: #D2C0BA;
 
-  --ink: #2D231D;
-  --ink-soft: #5A4B41;
+  --ink: #172A3A;
+  --ink-soft: rgba(23, 42, 58, .78);
 
-  --accent: #B38766;      /* decorative only: icons, rules, logo mark border */
-  --accent-ink: #8A6247;  /* interactive: buttons, links, focus */
-  --accent-ink-hover: #7A5540;
+  --accent: #B5A89B;      /* decorative only: icons, rules, logo mark border */
+  --accent-ink: #80604E;  /* interactive: buttons, links, focus */
+  --accent-ink-hover: #172A3A;
 
-  --line: rgba(45, 35, 29, .14);
+  --line: rgba(23, 42, 58, .14);
   --wrap: 1200px;
 
   --serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
@@ -120,7 +120,7 @@ section[id] { scroll-margin-top: 96px; }
   border-bottom: 1px solid var(--line);
 }
 
-.site-header.is-scrolled { box-shadow: 0 1px 12px rgba(45, 35, 29, .07); }
+.site-header.is-scrolled { box-shadow: 0 1px 12px rgba(23, 42, 58, .07); }
 
 .header-inner {
   display: flex;
@@ -143,11 +143,17 @@ section[id] { scroll-margin-top: 96px; }
   height: 42px;
   flex: 0 0 auto;
   border: 1px solid var(--accent);
-  color: var(--accent-ink);
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  letter-spacing: .06em;
 }
+
+.mark-svg { width: 24px; height: 24px; }
+
+.mark-glyph {
+  font-family: var(--serif);
+  font-size: 24px;
+}
+
+.mark-d { fill: #172A3A; }
+.mark-h { fill: #80604E; }
 
 .brand-name {
   display: block;
@@ -163,7 +169,7 @@ section[id] { scroll-margin-top: 96px; }
   font-size: .62rem;
   letter-spacing: .32em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink);
 }
 
 .primary-nav { margin-inline: auto; }
@@ -203,7 +209,7 @@ section[id] { scroll-margin-top: 96px; }
   transition: background-color .2s, color .2s, border-color .2s;
 }
 
-.btn-solid { background: var(--accent-ink); color: #fff; }
+.btn-solid { background: var(--accent-ink); color: #F5F1EB; }
 .btn-solid:hover { background: var(--accent-ink-hover); }
 
 .btn-outline { border-color: var(--ink); color: var(--ink); }
@@ -236,7 +242,7 @@ section[id] { scroll-margin-top: 96px; }
   max-width: var(--wrap);   /* column width, same 1200px cap as .wrap */
   margin-inline: auto;      /* centered, same mechanics as .wrap */
   background:
-    linear-gradient(rgba(250, 247, 242, .35), rgba(250, 247, 242, .35)),
+    linear-gradient(rgba(245, 241, 235, .35), rgba(245, 241, 235, .35)),
     url("background.jpg") center / cover no-repeat;
 }
 
@@ -331,7 +337,7 @@ section[id] { scroll-margin-top: 96px; }
 .ref-card {
   border: 1px solid var(--line);
   padding: 1.75rem;
-  background: #fff;
+  background: #D2C0BA;
 }
 
 .ref-card blockquote { font-size: 1.05rem; font-style: italic; }
