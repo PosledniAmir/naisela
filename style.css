@@ -388,10 +388,11 @@ section[id] { scroll-margin-top: 96px; }
   justify-items: start;
 }
 
-.map-placeholder {
+.map-embed {
+  display: block;
   width: 100%;
   min-height: 260px;
-  background: linear-gradient(160deg, #EDE4DA, #DCCAB6);
+  border: 0;
 }
 
 /* Footer ----------------------------------------------------------------- */
