@@ -1,5 +1,5 @@
 # naisela
 
-Static one-page website for Mgr. Denisa Hanáková — advokátka (Kroměříž).
+Static one-page website.
 
 **Live:** https://posledniamir.github.io/naisela/
