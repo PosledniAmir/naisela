@@ -122,11 +122,11 @@ section[id] { scroll-margin-top: 96px; }
   position: sticky;
   top: 0;
   z-index: 20;
-  background: var(--bg);
-  border-bottom: 1px solid var(--line);
+  background: var(--ink);
+  border-bottom: 1px solid rgba(245, 241, 235, .25);
 }
 
-.site-header.is-scrolled { box-shadow: 0 1px 12px rgba(23, 42, 58, .07); }
+.site-header.is-scrolled { box-shadow: 0 1px 12px rgba(0, 0, 0, .25); }
 
 .header-inner {
   display: flex;
@@ -168,7 +168,7 @@ section[id] { scroll-margin-top: 96px; }
   font-size: .95rem;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--bg);
 }
 
 .brand-role {
@@ -176,7 +176,7 @@ section[id] { scroll-margin-top: 96px; }
   font-size: .62rem;
   letter-spacing: .32em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: rgba(245, 241, 235, .75);
 }
 
 .primary-nav { margin-inline: auto; }
@@ -187,7 +187,7 @@ section[id] { scroll-margin-top: 96px; }
   font-size: .75rem;
   letter-spacing: .18em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: rgba(245, 241, 235, .8);
   text-decoration: none;
   padding-block: .35rem;
   border-bottom: 1px solid transparent;
@@ -195,7 +195,7 @@ section[id] { scroll-margin-top: 96px; }
 
 .nav-list a.is-active,
 .nav-list a:hover {
-  color: var(--ink);
+  color: var(--bg);
   border-bottom-color: var(--accent);
 }
 
@@ -474,7 +474,7 @@ section[id] { scroll-margin-top: 96px; }
     width: 44px;
     height: 44px;
     margin-left: auto;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(245, 241, 235, .4);
     background: none;
     cursor: pointer;
   }
@@ -485,7 +485,7 @@ section[id] { scroll-margin-top: 96px; }
     display: block;
     width: 20px;
     height: 1.5px;
-    background: var(--ink);
+    background: var(--bg);
     position: relative;
   }
 
@@ -508,8 +508,8 @@ section[id] { scroll-margin-top: 96px; }
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--bg);
-    border-bottom: 1px solid var(--line);
+    background: var(--ink);
+    border-bottom: 1px solid rgba(245, 241, 235, .25);
     display: none;
   }
 
@@ -525,7 +525,7 @@ section[id] { scroll-margin-top: 96px; }
   .nav-list a {
     display: block;
     padding-block: .85rem;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid rgba(245, 241, 235, .18);
   }
 }
 
