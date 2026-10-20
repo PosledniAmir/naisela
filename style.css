@@ -142,6 +142,7 @@ section[id] { scroll-margin-top: 96px; }
   width: 42px;
   height: 42px;
   flex: 0 0 auto;
+  background: var(--bg);
   border: 1px solid var(--accent);
 }
 
@@ -149,7 +150,7 @@ section[id] { scroll-margin-top: 96px; }
 
 .mark-glyph {
   font-family: var(--serif);
-  font-size: 24px;
+  font-size: 300px;
 }
 
 .mark-d { fill: #172A3A; }
