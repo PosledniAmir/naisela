@@ -250,7 +250,7 @@ section[id] { scroll-margin-top: 96px; }
   margin-inline: auto;      /* centered, same mechanics as .wrap */
   background:
     linear-gradient(rgba(245, 241, 235, .7), rgba(245, 241, 235, .7)),
-    url("background.jpg") center / cover no-repeat;
+    url("background.png") center / cover no-repeat;
 }
 
 .hero .lead { color: var(--ink); }
@@ -336,33 +336,6 @@ section[id] { scroll-margin-top: 96px; }
   height: 1px;
   flex: 1 1 auto;
   background: var(--line);
-}
-
-/* References ------------------------------------------------------------- */
-
-.refs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-}
-
-.ref-card {
-  border: 1px solid var(--line);
-  padding: 1.75rem;
-  background: #D2C0BA;
-}
-
-.ref-card blockquote { font-size: 1.05rem; font-style: italic; }
-
-.ref-card cite {
-  display: block;
-  margin-top: 1rem;
-  font-size: .75rem;
-  font-style: normal;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
 }
 
 /* Contact ---------------------------------------------------------------- */
